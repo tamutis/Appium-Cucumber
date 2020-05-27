@@ -11,7 +11,7 @@
 	  -  Login em Branco.
 	  
 
-## Cucumber/Selenium 
+## Cucumber/Appium 
 
 	Objetivo:
 	Utilizando Cucumber e Appium para executar testes automatizados em smartphones
@@ -24,5 +24,6 @@
         - mvn compile
         - mvn verify
 
-![cucumber](https://user-images.githubusercontent.com/20347604/82463713-87f3e700-9a93-11ea-9381-1b7a297ef0eb.PNG)
+![appium](https://user-images.githubusercontent.com/20347604/83003046-275d3080-9fe4-11ea-9d73-3e939a346228.png)
+
 
