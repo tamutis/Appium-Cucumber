@@ -6,16 +6,15 @@
 ## Características: 
   	  -  Criar um projeto de automação 
 	  -  Efetuar um cadastro e que também contenha os cenários (em BDD)
-	  -  Login Sucesso
-	  -  Login Inválido. 
+	  -  Exportar
+	  -  Excluir Usuário
 	  -  Login em Branco.
-	  -  Utilizando page objects pattern.
-	  - Gerarando relatório dos testes.
+	  
 
 ## Cucumber/Selenium 
 
 	Objetivo:
-	O Cucumber interpreta os testes na linguagem de programação especificada e utiliza o Selenium para conduzir os casos de teste em um navegador
+	Utilizando Cucumber e Appium para executar testes automatizados em smartphones
 
 ## Rodar os Testes via Prompt
 
