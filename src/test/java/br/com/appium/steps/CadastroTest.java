@@ -16,7 +16,7 @@ import appiumPage.ExportarPage;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.pt.Dado;
-import cucumber.api.java.pt.Ent„o;
+import cucumber.api.java.pt.Ent√£o;
 import cucumber.api.java.pt.Quando;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -55,17 +55,17 @@ public class CadastroTest {
 	@Test
 	@Dado("clicar em cadastro novo")
 	public void clicarEmCadastroNovo() throws InterruptedException {
-		Thread.sleep(2000);
+	
 		clientePage.clickCadastro();
 	}
 
 	@Quando("informar os dados do cliente")
 	public void informarOsDadosDoCliente() throws InterruptedException {
-		clientePage.cadastro("AndrÈ Luiz", "463152785", "36816530896", "04121989", "Rua Marfim", "463152785",
+		clientePage.cadastro("Andr√© Luiz", "463152785", "36816530896", "04121989", "Rua Marfim", "463152785",
 				"Cidade das Flores", "06184290", "Osasco", "11989951307", "1136081464", "tamutisf@gmail.com");
 	}
 
-	@Ent„o("salvo")
+	@Ent√£o("salvo")
 	public void salvo() throws InterruptedException {
 
 		clientePage.btnSalvar();
@@ -76,14 +76,14 @@ public class CadastroTest {
 		driver.navigate().back();
 	}
 
-	@Ent„o("validado se o cliete foi salvo corretamente")
+	@Ent√£o("validado se o cliete foi salvo corretamente")
 	public void validadoSeOClieteFoiSalvoCorretamente() throws InterruptedException {
 		Thread.sleep(2000);
 		String txtusuario = driver.findElement(By.xpath(
 				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout[2]/android.widget.ListView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.TextView[1]"))
 				.getText();
 
-		assertEquals("AndrÈ Luiz", txtusuario);
+		assertEquals("Andr√© Luiz", txtusuario);
 	}
 
 	@Dado("clicar em exportar dados")
@@ -103,7 +103,7 @@ public class CadastroTest {
 
 	}
 
-	@Ent„o("valida a mensagem de arquivo salvo")
+	@Ent√£o("valida a mensagem de arquivo salvo")
 	public void validaAMensagemDeArquivoSalvo() throws InterruptedException {
 
 		Thread.sleep(1000);
@@ -143,7 +143,7 @@ public class CadastroTest {
 
 	}
 
-	@Ent„o("excluir")
+	@Ent√£o("excluir")
 	public void excluir() throws InterruptedException {
 
 		deletePage.btnExcluir();
