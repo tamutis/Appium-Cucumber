@@ -31,7 +31,7 @@ public class CadastroTest {
 	public ExportarPage exportarPage;
 	public DeletePage deletePage;
 
-	@Before()
+	@Before(value="@cadastro")
 	public void inicializa() throws Exception {
 
 		DesiredCapabilities cap = new DesiredCapabilities();
@@ -43,7 +43,8 @@ public class CadastroTest {
 		cap.setCapability("appActivity", "br.com.dudstecnologia.cadastrodeclientes.MainClientes");
 		cap.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS, "true");
 
-		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), cap);
+		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
+		
 		clientePage = new ClientePage(driver);
 		exportarPage = new ExportarPage(driver);
 		deletePage = new DeletePage(driver);
@@ -54,8 +55,6 @@ public class CadastroTest {
 	@Test
 	@Dado("clicar em cadastro novo")
 	public void clicarEmCadastroNovo() throws InterruptedException {
-
-		Thread.sleep(1000);
 		clientePage.clickCadastro();
 	}
 
@@ -154,7 +153,7 @@ public class CadastroTest {
 
 	}
 
-	@After
+	@After(value="@cadastro")
 
 	public void finaliza() {
 		driver.quit();
