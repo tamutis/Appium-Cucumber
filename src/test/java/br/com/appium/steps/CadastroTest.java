@@ -43,7 +43,7 @@ public class CadastroTest {
 		cap.setCapability("appActivity", "br.com.dudstecnologia.cadastrodeclientes.MainClientes");
 		cap.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS, "true");
 
-		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
+		driver = new AndroidDriver <MobileElement> (new URL("http://127.0.0.1:4723/wd/hub"), cap);
 		
 		clientePage = new ClientePage(driver);
 		exportarPage = new ExportarPage(driver);
