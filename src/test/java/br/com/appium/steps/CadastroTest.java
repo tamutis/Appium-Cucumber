@@ -55,7 +55,7 @@ public class CadastroTest {
 	@Dado("clicar em cadastro novo")
 	public void clicarEmCadastroNovo() throws InterruptedException {
 
-		
+		Thread.sleep(1000);
 		clientePage.clickCadastro();
 	}
 
