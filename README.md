@@ -8,7 +8,6 @@
 	  -  Efetuar um cadastro e que também contenha os cenários (em BDD)
 	  -  Exportar
 	  -  Excluir Usuário
-	  -  Login em Branco.
 	  
 
 ## Cucumber/Appium 
