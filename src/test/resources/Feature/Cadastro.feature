@@ -17,7 +17,7 @@ Funcionalidade: Validar apk de Cadasto de cliente
     Quando exporto em Excel
     Então valida a mensagem de arquivo salvo
 
-  @excluirUsuario
+  @excluir
   Cenário: excluir Usuario
     Dado clico em pesquisa
     Quando localizar o Cliente

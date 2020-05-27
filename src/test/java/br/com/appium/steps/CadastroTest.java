@@ -96,7 +96,7 @@ public class CadastroTest {
 
 	@Quando("exporto em Excel")
 	public void exportoEmExcel() throws InterruptedException {
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		exportarPage.expoExcel();
 		
 
@@ -124,6 +124,7 @@ public class CadastroTest {
 
 	@Dado("clico em pesquisa")
 	public void clicoEmPesquisa() throws InterruptedException {
+		Thread.sleep(2000);
 		clientePage.clickCadastro();
 		clientePage.cadastro2("Luiz Freitas");
 		clientePage.btnSalvar();
