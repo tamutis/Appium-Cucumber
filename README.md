@@ -1,8 +1,3 @@
-![apapapapapapapaa](https://user-images.githubusercontent.com/20347604/83002579-9d14cc80-9fe3-11ea-886f-5bff4b80009b.jpg)
-
-
-
-
 ## Características: 
   	  -  Criar um projeto de automação 
 	  -  Efetuar um cadastro e que também contenha os cenários (em BDD)
